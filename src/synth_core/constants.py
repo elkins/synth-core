@@ -1,0 +1,22 @@
+import math
+
+# Fundamental Physical Constants (CODATA 2018/2022 recommended values)
+SPEED_OF_LIGHT = 299792458.0  # m/s
+PLANCK_CONSTANT = 6.62607015e-34  # J Hz^-1 (exact)
+REDUCED_PLANCK_CONSTANT = PLANCK_CONSTANT / (2.0 * math.pi)
+BOLTZMANN_CONSTANT = 1.380649e-23  # J K^-1 (exact)
+AVOGADRO_CONSTANT = 6.02214076e23  # mol^-1 (exact)
+VACUUM_PERMEABILITY = 1.25663706212e-6  # N A^-2 (approx)
+
+# Unit Conversions
+METER_TO_ANGSTROM = 1e10
+ANGSTROM_TO_METER = 1e-10
+JOULE_TO_KCAL = 1.0 / 4184.0
+
+# Pre-computed Biophysics Constants
+BOLTZMANN_KCAL_MOL_K = BOLTZMANN_CONSTANT * AVOGADRO_CONSTANT * JOULE_TO_KCAL
+
+# NMR Specific (Gyromagnetic Ratios in rad s^-1 T^-1)
+GAMMA_1H = 267.52218744e6
+GAMMA_13C = 67.2828e6
+GAMMA_15N = -27.116e6

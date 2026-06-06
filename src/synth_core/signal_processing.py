@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.typing as npt
-from typing import Any, Tuple
+from typing import Any
 
 
 def add_gaussian_noise(data: npt.NDArray[np.float64], snr: float) -> npt.NDArray[np.float64]:

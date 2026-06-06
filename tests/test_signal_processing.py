@@ -3,6 +3,7 @@ import numpy as np
 
 from synth_core.signal_processing import compute_fsc, add_gaussian_noise
 
+
 class TestSignalProcessing(unittest.TestCase):
     def test_fsc_with_noise(self) -> None:
         """

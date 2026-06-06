@@ -2,6 +2,7 @@ import numpy as np
 import numpy.typing as npt
 from typing import Any, Tuple
 
+
 def add_gaussian_noise(data: npt.NDArray[np.float64], snr: float) -> npt.NDArray[np.float64]:
     """
     Add Gaussian noise to the data based on desired SNR.

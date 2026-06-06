@@ -46,6 +46,15 @@ jobs:
       run: |
         mypy src/
 
+
+    - name: Cache Hugging Face models
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/huggingface
+        key: ${{ runner.os }}-huggingface-${{ hashFiles('**/pyproject.toml') }}
+        restore-keys: |
+          ${{ runner.os }}-huggingface-
+
     - name: Run tests (Pytest)
       run: |
         pytest tests/ -v --cov=synth_core --cov-report=xml
